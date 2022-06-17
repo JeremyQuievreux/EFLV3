@@ -1,0 +1,70 @@
+$colors: (
+  "primary":#1f1f1f ,
+  "secondary": #00600f,
+  "tier": gold,
+  "white": white,
+  "black": black
+);
+
+@each $key, $val in $colors {
+    .txt_#{$key} {
+      color: $val;
+    }
+    .txt_hover_#{$key}{
+      &:hover{
+        color: $val
+      }
+    }
+    .bg_#{$key}{
+      background-color: $val;
+    }
+    .bg_hover_#{$key}{
+      &:hover{
+        background-color: $val;
+      }
+    }
+    @if($val != black and $val != white){
+      //light variation
+      @each $key, $val in $colors {
+        @for $i from 1 through 9 {
+          .txt_#{$key}_light_#{$i}{
+            color: mix(white, $val, $i * 10)
+          }
+          .bg_#{$key}_light_#{$i}{
+            background-color: mix(white, $val, $i * 10)
+          }
+          .txt_hover_#{$key}_light_#{$i}{
+            &:hover{
+              color: mix(white, $val, $i * 10) 
+            }
+          }
+          .bg_hover_#{$key}_light_#{$i}{
+            &:hover{
+              background-color: mix(white, $val, $i * 10) 
+            }
+          }
+        }
+      }
+      //dark variation
+      @each $key, $val in $colors {
+        @for $i from 1 through 9 {
+          .text_#{$key}_dark_#{$i}{
+            color: mix(black, $val, $i * 10)
+          }
+          .bg_#{$key}_dark_#{$i}{
+            background-color: mix(black, $val, $i * 10) 
+          }
+          .txt_hover_#{$key}_dark_#{$i}{
+            &:hover{
+              color: mix(black, $val, $i * 10) 
+            }
+          }
+          .bg_hover_#{$key}_dark_#{$i}{
+            &:hover{
+              background-color: mix(black, $val, $i * 10) 
+            }
+          }
+        }
+      }
+    }
+  }
