@@ -13,7 +13,7 @@
         display: flex;
         justify-content: center;
         margin: 15px;
-        padding: 5px;
+        padding: 15px;
         box-shadow: 10px 10px 10px map-get($map: $colors, $key: "primary") ;
         background-color: map-get($map: $colors, $key: "white" );
         img{
