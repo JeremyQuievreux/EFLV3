@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Head from 'next/head'
+
+import axios from 'axios'
 
 import styles from "../../styles/pages/League_pages.module.scss"
 
@@ -12,6 +14,7 @@ import icon_resultats from '../../img/icon_result.png'
 import icon_teams from '../../img/icon_teams.png'
 
 const Ligue1 = () => {
+
   return (
     <div className={styles.main_container}>
       <Head>

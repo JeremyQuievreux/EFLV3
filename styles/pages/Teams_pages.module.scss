@@ -1,0 +1,9 @@
+@import "../general/colors.scss";
+
+.container{
+    .cards_container{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
