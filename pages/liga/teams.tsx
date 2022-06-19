@@ -34,7 +34,7 @@ const TeamsLiga = () => {
       <div className={styles.cards_container}>
       {teams && teams.map((team)=> {
         return(
-          <TeamCard team={team}/>
+          <TeamCard key={team.id} team={team}/>
         )
       })}
       </div>
