@@ -3,4 +3,5 @@ export type TeamType = {
     name: string,
     short_name: string,
     logo: string,
+    league:string[],
 }
