@@ -10,6 +10,7 @@ import logo_seria from "../img/logo_seri_a.png"
 import logo_bundesliga from "../img/logo_bundesliga.png"
 import logo_liga from "../img/logo_liga.png"
 import logo_champion_league from "../img/logo_champions_league.png"
+import logo_world_cup from "../img/logo_world_cup.png"
 
 const Home: NextPage = () => {
   return (
@@ -49,6 +50,11 @@ const Home: NextPage = () => {
         <Link href={"/champions_league"}>
           <div className={styles.card}>
             <Image src={logo_champion_league}/>
+          </div>
+        </Link>
+        <Link href={"/world_cup"}>
+          <div className={styles.card}>
+            <Image src={logo_world_cup}/>
           </div>
         </Link>
       </div>
