@@ -6,6 +6,7 @@
     align-items: center;
     width: 150px;
     .card_logo{
+        box-shadow: 10px 10px 10px map-get($map: $colors, $key: "primary") ;
         width: 100px;
         height: 100px;
         display: flex;
