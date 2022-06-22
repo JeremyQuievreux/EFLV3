@@ -1,4 +1,4 @@
-const teamsWorldCup22 = [
+export const teams_World_Cup = [
     {
         id: "WC22-1",
         name: "Quatar",

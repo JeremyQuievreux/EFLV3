@@ -12,7 +12,10 @@ import logo_liga from "../img/logo_liga.png"
 import logo_champion_league from "../img/logo_champions_league.png"
 import logo_world_cup from "../img/logo_world_cup.png"
 
+
+
 const Home: NextPage = () => {
+
   return (
     <div className={styles.container}>
       <Head>
