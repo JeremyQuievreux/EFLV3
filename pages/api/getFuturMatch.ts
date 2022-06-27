@@ -1,8 +1,8 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { calendar_Ligue_1 }  from '../../data/calendar/calendar_Ligue_1.js';
-import { calendar_Premier_League } from '../../data/calendar/calendar_Premier_League';
+import { calendar_Ligue_1 }  from '../../data/Calendar/calendar_Ligue_1';
+import { calendar_Premier_League } from '../../data/Calendar/calendar_Premier_League';
 
 import { MatchType } from '../../types/MatchType';
 
