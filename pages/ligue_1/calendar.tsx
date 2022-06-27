@@ -1,9 +1,30 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
+
+import axios from 'axios'
 
 import styles from "../../styles/pages/Calendar_pages.module.scss"
 
+import { MatchType } from '../../types/MatchType'
+
 const CalendarLigue1 = () => {
+
+  const [ matchs, setMatchs ] = useState<MatchType[]>()
+
+  
+  useEffect(() => {
+    const now = new Date().toLocaleDateString("en-GB")
+    axios.get('/api/getFuturMatch',{
+      params:{
+        league : "Ligue 1",
+        date : now,
+      }
+    })
+      .then(res => {
+        setMatchs(res.data.data)
+      })
+  },[])
+
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +33,14 @@ const CalendarLigue1 = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Calendrier ligue 1</div>
+      {matchs && matchs.map((match) => {
+        return(
+          <div key={match.id}>
+            {match.home_team} - {match.away_team}
+          </div>
+          )
+        })
+      }
     </div>
   )
 }
