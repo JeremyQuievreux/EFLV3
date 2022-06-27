@@ -9,7 +9,11 @@ import { MatchType } from '../../types/MatchType'
 
 const CalendarLigue1 = () => {
 
-  const [ matchs, setMatchs ] = useState<MatchType[]>()
+  const [ allMatchs, setAllMatchs ] = useState<MatchType[]>()
+  const [ daysList, setDaysList ] = useState<string[]>()
+
+  const [ daySelect, setDaySelect ] = useState<string>("")
+  const [ matchsSelect, setMatchsSelect ] = useState<MatchType[]>()
 
   
   useEffect(() => {
@@ -21,9 +25,31 @@ const CalendarLigue1 = () => {
       }
     })
       .then(res => {
-        setMatchs(res.data.data)
+        setAllMatchs(res.data.data)
       })
   },[])
+
+  useEffect(() => {
+    let days:string[] = []
+    allMatchs?.map((match) => {
+      if (!days.includes(match.info)) {
+        days = [...days, match.info]
+      }
+    })
+    setDaysList(days)
+  },[allMatchs])
+
+  useEffect(() => {
+    const test = allMatchs?.filter((match) => {
+      return match.info === daySelect
+    })    
+    setMatchsSelect(test)
+  },[daySelect])
+
+  const handleChangeDay = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
+    setDaySelect(e.target.value)
+  }
+
 
   return (
     <div className={styles.container}>
@@ -33,7 +59,13 @@ const CalendarLigue1 = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Calendrier ligue 1</div>
-      {matchs && matchs.map((match) => {
+      <select name="day" id="day" value={daySelect} onChange={(e) => handleChangeDay(e)}>
+        <option value="">--- Choisir Journée ---</option>
+        {daysList?.map((day) => {
+          return <option key={day} value={day}>{day}</option>
+        })}
+      </select>
+      {matchsSelect && matchsSelect.map((match) => {
         return(
           <div key={match.id}>
             {match.home_team} - {match.away_team}
