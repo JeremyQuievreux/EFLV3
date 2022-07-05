@@ -6,7 +6,7 @@ export const calendar_Premier_League = [
         info:"1",
         date: "05/08/2022",
         time: "",
-        home_team: "Crytal Palace",
+        home_team: "Crystal Palace",
         home_score: "",
         away_team: "Arsenal",
         away_score: ""
@@ -194,7 +194,7 @@ export const calendar_Premier_League = [
         info:"2",
         date: "13/08/2022",
         time: "",
-        home_team: "Nottigham",
+        home_team: "Nottingham",
         home_score: "",
         away_team: "West Ham",
         away_score: ""
@@ -218,7 +218,7 @@ export const calendar_Premier_League = [
         time: "",
         home_team: "Wolverhampton",
         home_score: "",
-        away_team: "Fullham",
+        away_team: "Fulham",
         away_score: ""
     },
     //Day 3
@@ -252,7 +252,7 @@ export const calendar_Premier_League = [
         time: "",
         home_team: "Everton",
         home_score: "",
-        away_team: "Nottigham",
+        away_team: "Nottingham",
         away_score: ""
     },
     {

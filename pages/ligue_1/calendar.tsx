@@ -5,15 +5,15 @@ import axios from 'axios'
 
 import styles from "../../styles/pages/Calendar_pages.module.scss"
 
-import { MatchType } from '../../types/MatchType'
+import { FeededMatchType } from '../../types/FeededMatchType'
 
 const CalendarLigue1 = () => {
 
-  const [ allMatchs, setAllMatchs ] = useState<MatchType[]>()
+  const [ allMatchs, setAllMatchs ] = useState<FeededMatchType[]>()
   const [ daysList, setDaysList ] = useState<string[]>()
 
   const [ daySelect, setDaySelect ] = useState<string>("")
-  const [ matchsSelect, setMatchsSelect ] = useState<MatchType[]>()
+  const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]>()
 
   
   useEffect(() => {
@@ -25,6 +25,7 @@ const CalendarLigue1 = () => {
       }
     })
       .then(res => {
+        console.log(res.data.data[0]);
         setAllMatchs(res.data.data)
       })
   },[])
@@ -44,6 +45,7 @@ const CalendarLigue1 = () => {
       return match.info === daySelect
     })    
     setMatchsSelect(test)
+    console.log(test);
   },[daySelect])
 
   const handleChangeDay = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
@@ -68,7 +70,7 @@ const CalendarLigue1 = () => {
       {matchsSelect && matchsSelect.map((match) => {
         return(
           <div key={match.id}>
-            {match.home_team} - {match.away_team}
+            <p><img src={match.home_team?.logo} alt="" height={20} width={20}/> {match.home_team?.short_name} - {match.away_team?.short_name} <img src={match.away_team?.logo} alt="" height={20} width={20}/></p>
           </div>
           )
         })

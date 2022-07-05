@@ -72,7 +72,7 @@ export const teams_Premier_League = [
     {
         id: "UK-22/23-11",
         name: "Leicester City",
-        short_name: "Leicester City",
+        short_name: "Leicester",
         league: ["Premier League"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/b/b6/Leicester_City.svg/langfr-1024px-Leicester_City.svg.png"
     },
@@ -100,7 +100,7 @@ export const teams_Premier_League = [
     {
         id: "UK-22/23-15",
         name: "Newcastle United",
-        short_name: "Newcastle United",
+        short_name: "Newcastle",
         league: ["Premier League"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/6/63/Logo_Newcastle_United.svg/langfr-1024px-Logo_Newcastle_United.svg.png"
     },

@@ -8,8 +8,8 @@ export const teams_Ligue_1 = [
     },
     {
         id: "FR-22/23-02",
-        name: "Anger SCO",
-        short_name: "Anger",
+        name: "Angers SCO",
+        short_name: "Angers",
         league: ["Ligue 1"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d3/Logo_Angers_SCO_-_2021.svg/langfr-800px-Logo_Angers_SCO_-_2021.svg.png",
     },
@@ -88,7 +88,7 @@ export const teams_Ligue_1 = [
         name: "Olympique lyonnais",
         short_name: "Lyon",
         league: ["Ligue 1"],
-        logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/e/e2/Olympique_lyonnais_%28logo%29.svg/langfr-800px-Olympique_lyonnais_%28logo%29.svg.png"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Logo-OL-2022.svg/langfr-800px-Logo-OL-2022.svg.png"
     },
     {
         id: "FR-22/23-14",
