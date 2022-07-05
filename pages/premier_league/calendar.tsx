@@ -9,11 +9,11 @@ import styles from "../../styles/pages/Calendar_pages.module.scss"
 
 const CalendarPremierLeague = () => {
 
-  const [ allMatchs, setAllMatchs ] = useState<MatchType[]>()
+  const [ allMatchs, setAllMatchs ] = useState<FeededMatchType[]>()
   const [ daysList, setDaysList ] = useState<string[]>()
 
   const [ daySelect, setDaySelect ] = useState<string>("")
-  const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]|undefined>()
+  const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]>()
 
   useEffect(() => {
     const now = new Date().toLocaleDateString("en-GB")
