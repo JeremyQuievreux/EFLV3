@@ -1,9 +1,51 @@
-import React from 'react'
+import React, { useEffect, useState} from 'react'
 import Head from 'next/head'
+import axios from 'axios'
+
+import { FeededMatchType } from '../../types/FeededMatchType'
 
 import styles from "../../styles/pages/Calendar_pages.module.scss"
 
 const CalendarSeriA = () => {
+  const [ allMatchs, setAllMatchs ] = useState<FeededMatchType[]>()
+  const [ daysList, setDaysList ] = useState<string[]>()
+
+  const [ daySelect, setDaySelect ] = useState<string>("")
+  const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]>()
+
+  useEffect(() => {
+    const now = new Date().toLocaleDateString("en-GB")
+    axios.get('/api/getFuturMatch',{
+      params:{
+        league : "Seri A",
+        date : now,
+      }
+    })
+      .then(res => {
+        setAllMatchs(res.data.data)
+      })
+  },[])
+
+  useEffect(() => {
+    let days:string[] = []
+    allMatchs?.map((match) => {
+      if (!days.includes(match.info)) {
+        days = [...days, match.info]
+      }
+    })
+    setDaysList(days)
+  },[allMatchs])
+
+  useEffect(() => {
+    const test = allMatchs?.filter((match) => {
+      return match.info === daySelect
+    })    
+    setMatchsSelect(test)
+  },[daySelect])
+
+  const handleChangeDay = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
+    setDaySelect(e.target.value)
+  }
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +54,20 @@ const CalendarSeriA = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Calendrier Seri A</div>
+      <select name="day" id="day" value={daySelect} onChange={(e) => handleChangeDay(e)}>
+        <option value="">--- Choisir Journée ---</option>
+        {daysList?.map((day) => {
+          return <option key={day} value={day}>{day}</option>
+        })}
+      </select>
+      {matchsSelect && matchsSelect.map((match) => {
+        return(
+          <div key={match.id}>
+            <p><img src={match.home_team?.logo} alt="" height={20} width={20}/> {match.home_team?.short_name} - {match.away_team?.short_name} <img src={match.away_team?.logo} alt="" height={20} width={20}/></p>
+          </div>
+          )
+        })
+      }
     </div>
   )
 }

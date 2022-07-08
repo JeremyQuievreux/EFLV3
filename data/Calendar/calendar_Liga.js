@@ -161,9 +161,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Esp Barcelone",
         home_score: "",
-        away_team: "",
+        away_team: "Rayo Vallecano",
         away_score: ""
     },
     {
@@ -172,9 +172,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Elche",
         home_score: "",
-        away_team: "",
+        away_team: "Almeria",
         away_score: ""
     },
     {
@@ -183,9 +183,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Girona",
         home_score: "",
-        away_team: "",
+        away_team: "Getafe",
         away_score: ""
     },
     {
@@ -194,9 +194,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Séville",
         home_score: "",
-        away_team: "",
+        away_team: "Real Valladolid",
         away_score: ""
     },
     {
@@ -205,9 +205,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Majorque",
         home_score: "",
-        away_team: "",
+        away_team: "Real Betis",
         away_score: ""
     },
     {
@@ -216,9 +216,9 @@ export const calendar_Liga = [
         info:"2",
         date: "21/08/2022",
         time: "",
-        home_team: "",
+        home_team: "Real Sociedad",
         home_score: "",
-        away_team: "",
+        away_team: "Barcelone",
         away_score: ""
     },
     //day 3

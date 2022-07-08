@@ -2,14 +2,14 @@ export const teams_Liga = [
     {
         id: "ES-22/23-01",
         name: "UD Almeria",
-        short_name: "UD Almeria",
+        short_name: "Almeria",
         league: ["Liga"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/5/57/Logo_UD_Almeria.svg/langfr-800px-Logo_UD_Almeria.svg.png"
     },
     {
         id: "ES-22/23-02",
         name: "Athletic Bilbao",
-        short_name: "Ath  Bilbao",
+        short_name: "Ath Bilbao",
         league: ["Liga"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/2/28/Logo_Atlhetic_Bilbao_1995.svg/langfr-800px-Logo_Atlhetic_Bilbao_1995.svg.png"
     },
@@ -134,8 +134,8 @@ export const teams_Liga = [
     },
     {
         id: "ES-22/23-20",
-        name: "Villarreal CF",
-        short_name: "Villarreal",
+        name: "Villareal CF",
+        short_name: "Villareal",
         league: ["Liga", "Champions League"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/7/70/Villarreal_CF_logo.svg/langfr-800px-Villarreal_CF_logo.svg.png"
     },

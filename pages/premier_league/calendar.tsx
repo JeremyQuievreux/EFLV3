@@ -2,7 +2,6 @@ import React, { useEffect, useState} from 'react'
 import Head from 'next/head'
 import axios from 'axios'
 
-import { MatchType } from '../../types/MatchType'
 import { FeededMatchType } from '../../types/FeededMatchType'
 
 import styles from "../../styles/pages/Calendar_pages.module.scss"
