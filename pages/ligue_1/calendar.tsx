@@ -67,12 +67,15 @@ const CalendarLigue1 = () => {
           return <option key={day} value={day}>{day}° Journée</option>
         })}
       </select>
+      <div className={styles.matchs_container}>
+
       {matchsSelect && matchsSelect.map((match) => {
         return(
           <FuturMatchLine match={match} key={match.id}/>
           )
         })
       }
+      </div>
     </div>
   )
 }
