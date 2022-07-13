@@ -1,24 +1,24 @@
 import React, { useEffect, useState} from 'react'
 import Head from 'next/head'
+
 import axios from 'axios'
 
 import { FeededMatchType } from '../../types/FeededMatchType'
 
 import styles from "../../styles/pages/Calendar_pages.module.scss"
+import FuturMatchLine from '../../comps/FuturMatchLine'
 
 const CalendarSeriA = () => {
   const [ allMatchs, setAllMatchs ] = useState<FeededMatchType[]>()
-  const [ daysList, setDaysList ] = useState<string[]>()
-
-  const [ daySelect, setDaySelect ] = useState<string>("")
+  const [ optionsList, setOptionsList ] = useState<string[]>()
+  const [ optionSelected, setoptionSelected ] = useState<string>("")
   const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]>()
 
+  
   useEffect(() => {
-    const now = new Date().toLocaleDateString("en-GB")
-    axios.get('/api/getFuturMatch',{
+    axios.get('/api/getLeagueNextMatchs',{
       params:{
         league : "Seri A",
-        date : now,
       }
     })
       .then(res => {
@@ -33,18 +33,18 @@ const CalendarSeriA = () => {
         days = [...days, match.info]
       }
     })
-    setDaysList(days)
+    setOptionsList(days)
   },[allMatchs])
 
   useEffect(() => {
     const test = allMatchs?.filter((match) => {
-      return match.info === daySelect
+      return match.info === optionSelected
     })    
     setMatchsSelect(test)
-  },[daySelect])
+  },[optionSelected])
 
-  const handleChangeDay = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
-    setDaySelect(e.target.value)
+  const handleChangeOption = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
+    setoptionSelected(e.target.value)
   }
   return (
     <div className={styles.container}>
@@ -54,20 +54,21 @@ const CalendarSeriA = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Calendrier Seri A</div>
-      <select name="day" id="day" value={daySelect} onChange={(e) => handleChangeDay(e)}>
+      <select className={styles.day_selector} name="day" id="day" value={optionSelected} onChange={(e) => handleChangeOption(e)}>
         <option value="">--- Choisir Journée ---</option>
-        {daysList?.map((day) => {
-          return <option key={day} value={day}>{day}</option>
+        {optionsList?.map((optionValue) => {
+          return <option key={optionValue} value={optionValue}>{optionValue}</option>
         })}
       </select>
+      <div className={styles.matchs_container}>
+
       {matchsSelect && matchsSelect.map((match) => {
         return(
-          <div key={match.id}>
-            <p><img src={match.home_team?.logo} alt="" height={20} width={20}/> {match.home_team?.short_name} - {match.away_team?.short_name} <img src={match.away_team?.logo} alt="" height={20} width={20}/></p>
-          </div>
+          <FuturMatchLine match={match} key={match.id}/>
           )
         })
       }
+      </div>
     </div>
   )
 }

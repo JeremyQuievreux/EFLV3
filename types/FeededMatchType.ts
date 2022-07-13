@@ -8,5 +8,6 @@ export type FeededMatchType = {
     home_team?: TeamType,
     home_score: string,
     away_team?: TeamType,	
-    away_score: string
+    away_score: string,
+    finished: boolean,
   }
