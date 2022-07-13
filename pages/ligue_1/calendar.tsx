@@ -18,7 +18,8 @@ const CalendarLigue1 = () => {
 
   
   useEffect(() => {
-    const now = new Date().toLocaleDateString("en-GB")
+    const now = new Date().toLocaleString()
+    
     axios.get('/api/getFuturMatch',{
       params:{
         league : "Ligue 1",
@@ -26,7 +27,6 @@ const CalendarLigue1 = () => {
       }
     })
       .then(res => {
-        console.log(res.data.data[0]);
         setAllMatchs(res.data.data)
       })
   },[])

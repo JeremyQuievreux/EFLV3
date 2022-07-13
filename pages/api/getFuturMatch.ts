@@ -23,9 +23,11 @@ type ResponseDataType = {
   data: FeededMatchType[]
 }
 
-function createDateFromString(dateString: string){
+function createDateFromString(dateString: string, timeString: string) {
     const splitted_date = dateString.split("/");
-    const final_date = new Date(Number(splitted_date[2]), Number(splitted_date[1]) - 1, Number(splitted_date[0]))
+    const splitted_time = timeString.split(":");
+    const final_date = new Date(Number(splitted_date[2]), Number(splitted_date[1]) - 1, Number(splitted_date[0]), Number(splitted_time[0]), Number(splitted_time[1]));
+        
     return final_date.getTime()/1000;
 }
 
@@ -35,9 +37,9 @@ function filterByLeague (match:MatchType, query_league:any) {
     }
 }
 
-function filterByDate (match:MatchType, date:string) {
-    const finalQueryDate = createDateFromString(date);
-    const finalMatchDate = createDateFromString(match.date);    
+function filterByDate (match:MatchType, query_date:string, query_time:string) {
+    const finalQueryDate = createDateFromString(query_date, query_time);
+    const finalMatchDate = createDateFromString(match.date, match.time);
     if (finalMatchDate > finalQueryDate) {
         return match
     }
@@ -45,10 +47,13 @@ function filterByDate (match:MatchType, date:string) {
 
 export default function handler(req: NextApiRequest,res: NextApiResponse<ResponseDataType>) {
   const league = req.query.league
-  const date = req.query.date
+  const date_time = req.query.date
+
+  const query_date = (<string>date_time).split(" ")[0];
+  const query_time = (<string>date_time).split(" ")[1];
 
   const filteredMatchByLeague = allMatch.filter(match => filterByLeague(match, league));
-  const allNextMatch = filteredMatchByLeague.filter((match) => filterByDate(match, <string>date));
+  const allNextMatch = filteredMatchByLeague.filter((match) => filterByDate(match, <string>query_date, <string>query_time));
 
   const allNextMatchFeeded = allNextMatch.map((match) => {
     return {

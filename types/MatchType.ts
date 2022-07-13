@@ -3,6 +3,7 @@ export type MatchType = {
     league: string,
     info: string,
     date: string,
+    time: string,
     home_team: string,
     home_score: string,
     away_team: string,	
