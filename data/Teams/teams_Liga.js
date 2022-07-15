@@ -29,8 +29,8 @@ export const teams_Liga = [
     },
     {
         id: "ES-22/23-05",
-        name: "Real Betis",
-        short_name: "Real Betis",
+        name: "Betis Seville",
+        short_name: "Betis Seville",
         league: ["Liga"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/1/13/Real_betis_logo.svg/langfr-1024px-Real_betis_logo.svg.png"
     },
@@ -134,8 +134,8 @@ export const teams_Liga = [
     },
     {
         id: "ES-22/23-20",
-        name: "Villareal CF",
-        short_name: "Villareal",
+        name: "Villarreal CF",
+        short_name: "Villarreal",
         league: ["Liga", "Champions League"],
         logo: "https://upload.wikimedia.org/wikipedia/fr/thumb/7/70/Villarreal_CF_logo.svg/langfr-800px-Villarreal_CF_logo.svg.png"
     },
