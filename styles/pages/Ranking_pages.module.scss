@@ -5,79 +5,79 @@
     flex-direction: column;
     align-items: center;
     .ranklines_container{
-        border: 2px solid red;
+        border: 4px solid black;
         width: 95%;
-        overflow: scroll;
+        overflow: auto;
         .rankline{
             display: flex;
-            width: 100%;
+            width: max-content;
             .rankline_number{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_team_name{
-                border: 2px solid pink;
-                width: 50%;
+                border: 2px solid gold;
+                min-width: 300px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
             }
             .rankline_team_points{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_played_match{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_win_match{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_loose_match{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_drawn_match{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_goal_for{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_goal_against{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
             }
             .rankline_goal_difference{
-                border: 2px solid pink;
-                width: 50px;
+                border: 2px solid gold;
+                min-width: 50px;
                 display: flex;
                 justify-content: center;
                 align-items: center;

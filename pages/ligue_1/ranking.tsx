@@ -31,6 +31,7 @@ const RankingLigue1 = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Classement ligue 1</div>
+      <div>Work In Progress...</div>
       <div className={styles.ranklines_container}>
         <div className={styles.rankline}>
           <p className={styles.rankline_number}>N°</p>
