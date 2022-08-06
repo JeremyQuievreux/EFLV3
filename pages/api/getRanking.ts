@@ -2,10 +2,14 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 import { ranking_Ligue_1 } from '../../data/Ranking/ranking_Ligue_1'
+import { ranking_Premier_League } from '../../data/Ranking/ranking_Premier_League'
+import { ranking_Bundesliga } from '../../data/Ranking/ranking_Bundesliga'
+import { ranking_Seri_A } from '../../data/Ranking/ranking_Seri_A'
+import { ranking_Liga } from '../../data/Ranking/ranking_Liga'
 
 import { RankingType } from '../../types/RankingType';
 
-const all_Teams = [...ranking_Ligue_1];
+const all_Teams = [...ranking_Ligue_1, ...ranking_Premier_League, ...ranking_Bundesliga, ...ranking_Seri_A, ...ranking_Liga];
 
 type ResponseDataType = {
   data: RankingType[]

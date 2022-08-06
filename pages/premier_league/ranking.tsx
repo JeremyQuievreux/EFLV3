@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useEffect , useState} from 'react'
 import Head from 'next/head'
+import axios from 'axios'
+
 import styles from "../../styles/pages/Ranking_pages.module.scss"
 
+import { RankingType } from '../../types/RankingType'
+
+import Rankline from '../../comps/Rankline'
 
 const RankingPremierLeague = () => {
+  const [ ranking, setRanking ] = useState<RankingType[]>()
+
+  useEffect(() => {
+    axios.get('/api/getRanking',{
+      params:{
+        league : "Premier League",
+      }
+    })
+      .then(res => {
+        setRanking(res.data.data)
+      })
+  },[])
   return (
     <div className={styles.container}>
       <Head>
@@ -12,6 +29,25 @@ const RankingPremierLeague = () => {
         <link rel="icon" href="/icon_ball.ico" />
       </Head>
       <div>Classement Premier League</div>
+      <div className={styles.ranklines_container}>
+        <div className={styles.rankline}>
+          <p className={styles.rankline_number}>N°</p>
+          <p className={styles.rankline_team_name}>Equipes</p>
+          <p className={styles.rankline_team_points}>Pts</p>
+          <p className={styles.rankline_played_match}>J</p>
+          <p className={styles.rankline_win_match}>G</p>
+          <p className={styles.rankline_drawn_match}>N</p>
+          <p className={styles.rankline_loose_match}>P</p>
+          <p className={styles.rankline_goal_for}>BP</p>
+          <p className={styles.rankline_goal_against}>BC</p>
+          <p className={styles.rankline_goal_difference}>Dif</p>
+        </div>
+        {ranking && ranking.map((rankline, index) => {
+          return (
+            <Rankline key={index} index={index} rankline={rankline} />
+          )
+        })}
+      </div>
     </div>
   )
 }

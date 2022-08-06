@@ -1,8 +1,8 @@
 import React, { useEffect , useState} from 'react'
 import Head from 'next/head'
-import styles from "../../styles/pages/Ranking_pages.module.scss"
-
 import axios from 'axios'
+
+import styles from "../../styles/pages/Ranking_pages.module.scss"
 
 import { RankingType } from '../../types/RankingType'
 
