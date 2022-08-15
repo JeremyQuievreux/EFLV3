@@ -33,7 +33,7 @@ const RankingLigue1 = () => {
       <div>Classement ligue 1</div>
       <div>Work In Progress...</div>
       <div className={styles.ranklines_container}>
-        <div className={styles.rankline}>
+        {/* <div className={styles.rankline}>
           <p className={styles.rankline_number}>N°</p>
           <p className={styles.rankline_team_name}>Equipes</p>
           <p className={styles.rankline_team_points}>Pts</p>
@@ -44,7 +44,7 @@ const RankingLigue1 = () => {
           <p className={styles.rankline_goal_for}>BP</p>
           <p className={styles.rankline_goal_against}>BC</p>
           <p className={styles.rankline_goal_difference}>Dif</p>
-        </div>
+        </div> */}
         {ranking && ranking.map((rankline, index) => {
           return (
             <Rankline key={index} index={index} rankline={rankline} />
