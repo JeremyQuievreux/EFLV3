@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { calendar_Ligue_1 }  from '../../data/Calendar/calendar_Ligue_1';
 import { calendar_Premier_League } from '../../data/Calendar/calendar_Premier_League';
 import { calendar_Bundesliga } from '../../data/Calendar/calendar_Bundesliga';
 import { calendar_Liga } from '../../data/Calendar/calendar_Liga';
@@ -16,7 +15,9 @@ import { teams_Seri_A } from '../../data/Teams/teams_Seri_A';
 import { MatchType } from '../../types/MatchType';
 import { FeededMatchType } from '../../types/FeededMatchType';
 
-const allMatch = [...calendar_Ligue_1, ...calendar_Premier_League, ...calendar_Bundesliga, ...calendar_Liga, ...calendar_Seri_A];
+import { global_FR } from '../../data/Calendar/FR/global_FR';
+
+const allMatch = [...global_FR, ...calendar_Premier_League, ...calendar_Bundesliga, ...calendar_Liga, ...calendar_Seri_A];
 const allTeams = [...teams_Ligue_1, ...teams_Premier_League, ...teams_Bundesliga, ...teams_Liga, ...teams_Seri_A];
 
 type ResponseDataType = {

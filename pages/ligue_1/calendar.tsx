@@ -24,8 +24,6 @@ const CalendarLigue1 = () => {
     })
       .then(res => {
         setAllMatchs(res.data.data)
-        console.log(res.data.data);
-        
       })
   },[])
 
