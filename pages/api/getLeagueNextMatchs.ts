@@ -16,8 +16,9 @@ import { MatchType } from '../../types/MatchType';
 import { FeededMatchType } from '../../types/FeededMatchType';
 
 import { global_FR } from '../../data/Calendar/FR/global_FR';
+import { global_UK } from '../../data/Calendar/UK/global_UK';
 
-const allMatch = [...global_FR, ...calendar_Premier_League, ...calendar_Bundesliga, ...calendar_Liga, ...calendar_Seri_A];
+const allMatch = [...global_FR, ...global_UK, ...calendar_Bundesliga, ...calendar_Liga, ...calendar_Seri_A];
 const allTeams = [...teams_Ligue_1, ...teams_Premier_League, ...teams_Bundesliga, ...teams_Liga, ...teams_Seri_A];
 
 type ResponseDataType = {
