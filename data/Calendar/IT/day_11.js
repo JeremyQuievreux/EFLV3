@@ -29,7 +29,7 @@ export const it_day_11 = [
         info: "11° Journée",
         date: "23/10/2022",
         time: "20:00",
-        home_team: "Atalanta",
+        home_team: "Atalanta Bergame",
         home_score: "",
         away_team: "Lazio",
         away_score: "",
