@@ -6,7 +6,7 @@ import axios from 'axios'
 import styles from "../../styles/pages/Calendar_pages.module.scss"
 
 import { FeededMatchType } from '../../types/FeededMatchType'
-import FuturMatchLine from '../../comps/FuturMatchLine'
+import CalendarMatchLine from '../../comps/CalendarMatchLine'
 
 const CalendarLigue1 = () => {
 
@@ -66,7 +66,7 @@ const CalendarLigue1 = () => {
 
       {matchsSelect && matchsSelect.map((match) => {
         return(
-          <FuturMatchLine match={match} key={match.id}/>
+          <CalendarMatchLine match={match} key={match.id}/>
           )
         })
       }

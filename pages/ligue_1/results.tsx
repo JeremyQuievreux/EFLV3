@@ -4,7 +4,7 @@ import styles from "../../styles/pages/Results_pages.module.scss"
 
 import axios from 'axios'
 import { FeededMatchType } from '../../types/FeededMatchType'
-import FuturMatchLine from '../../comps/FuturMatchLine'
+import ResultMatchLine from '../../comps/ResultMatchLine'
 
 
 const ResultsLigue1 = () => {
@@ -62,7 +62,7 @@ const ResultsLigue1 = () => {
       <div className={styles.matchs_container}>
       {matchsSelect && matchsSelect.map((match) => {
         return(
-          <FuturMatchLine match={match} key={match.id}/>
+          <ResultMatchLine match={match} key={match.id}/>
           )
         })
       }

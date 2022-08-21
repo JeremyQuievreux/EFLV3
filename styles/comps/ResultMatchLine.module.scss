@@ -1,0 +1,129 @@
+@import '../general/colors.scss';
+
+.match_line_container{
+    border: 1px solid black;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px;
+    box-shadow: 10px 10px 15px black;
+    border-radius: 10px;
+    .home_team_container{
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        border-radius: 10px 10px 0 0;
+        .home_team_name{
+            border: 1px solid black;
+            border-radius: 0 8px 0 0;
+            width: 248px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .home_score{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100%;
+        }
+        .home_team_logo_container{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 8px 0 0 0;
+            img{
+                max-width: 100%;
+                max-height: 100% ;
+            }
+        }
+    }
+    .teams_separator{
+        display: none;
+    }
+    .away_team_container{
+        background-color: lightgray;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        align-items: center;
+        .away_team_name{
+            border: 1px solid black;
+            border-radius: 0 0 8px 0;
+            width: 200px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .away_score{
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: white;
+        }
+        .away_team_logo_container{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 0 0 0 8px;
+            img{
+                max-width: 100%;
+                max-height: 100% ;
+            }
+        }
+    }
+}
+
+@media (min-width: 750px){
+    .match_line_container{
+        display: flex;
+        width: auto;
+        max-width: none;
+        .teams_separator{
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        .home_team_container{
+            border-radius: 10px 0 0 8px;
+            .home_team_name{
+                border-radius: 0;
+            }
+            .home_team_logo_container{
+                border-radius: 8px 0 0 8px;
+            }
+        }
+        .away_team_container{
+            border-radius: 0 10px 10px 0;
+            .away_team_name{
+                border-radius: 0;
+                order: 1;
+            }
+            .away_score{
+                order: 0;
+            }
+            .away_team_logo_container{
+                border-radius: 0 8px 8px 0;
+                order: 3;
+            }
+        }
+    }
+}
