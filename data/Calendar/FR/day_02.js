@@ -7,10 +7,10 @@ export const fr_day_2 =  [
         time: "15:00",
         home_team: "Ajaccio",
         home_score: "0",
-        home_scorer:[],
+        home_scorers:[],
         away_team: "Lens",
         away_score: "0",
-        away_scorer:[],
+        away_scorers:[],
         finished: true,
       },
       {
@@ -21,7 +21,7 @@ export const fr_day_2 =  [
         time: "15:00",
         home_team: "Auxerre",
         home_score: "2",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Jeanvier",
             time: "4"
@@ -33,7 +33,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Angers",
         away_score: "2",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Diony",
             time: "22"
@@ -53,7 +53,7 @@ export const fr_day_2 =  [
         time: "17:00",
         home_team: "Monaco",
         home_score: "1",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Embolo",
             time: "72"
@@ -61,7 +61,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Rennes",
         away_score: "1",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Laborde",
             time: "59"
@@ -77,10 +77,10 @@ export const fr_day_2 =  [
         time: "13:00",
         home_team: "Lorient",
         home_score: "",
-        home_scorer:[],
+        home_scorers:[],
         away_team: "Lyon",
         away_score: "",
-        away_scorer:[],
+        away_scorers:[],
         finished: false,
       },
       {
@@ -91,7 +91,7 @@ export const fr_day_2 =  [
         time: "21:00",
         home_team: "Nantes",
         home_score: "1",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Simon",
             time: "28"
@@ -99,7 +99,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Lille",
         away_score: "1",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Ismaily",
             time: "76"
@@ -115,7 +115,7 @@ export const fr_day_2 =  [
         time: "17:00",
         home_team: "Nice",
         home_score: "1",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Delort",
             time: "35"
@@ -123,7 +123,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Strasbourg",
         away_score: "1",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Gameiro",
             time: "56"
@@ -139,7 +139,7 @@ export const fr_day_2 =  [
         time: "21:00",
         home_team: "PSG",
         home_score: "5",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Sacko",
             time: "39"
@@ -163,7 +163,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Montpellier",
         away_score: "2",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Khazri",
             time: "58"
@@ -183,7 +183,7 @@ export const fr_day_2 =  [
         time: "20:45",
         home_team: "Brest",
         home_score: "1",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Less-Melou",
             time: "61"
@@ -191,7 +191,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Marseille",
         away_score: "1",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Tavares",
             time: "38"
@@ -207,7 +207,7 @@ export const fr_day_2 =  [
         time: "15:00",
         home_team: "Reims",
         home_score: "2",
-        home_scorer:[
+        home_scorers:[
           {
             name: "Doumbia",
             time: "23"
@@ -219,7 +219,7 @@ export const fr_day_2 =  [
         ],
         away_team: "Clermont",
         away_score: "4",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Andric",
             time: "52"
@@ -247,10 +247,10 @@ export const fr_day_2 =  [
         time: "15:00",
         home_team: "Troyes",
         home_score: "0",
-        home_scorer:[],
+        home_scorers:[],
         away_team: "Toulouse",
         away_score: "3",
-        away_scorer:[
+        away_scorers:[
           {
             name: "Larouci",
             time: "36"
