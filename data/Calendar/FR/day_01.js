@@ -78,8 +78,24 @@ export const fr_day_1 = [
     time: "21:00",
     home_team: "Lyon",
     home_score: "2",
+    home_scorers: [
+      {
+        name: "Mateus Martins",
+        time: "12"
+      },
+      {
+        name: "Lacazette",
+        time: "22"
+      }
+    ],
     away_team: "Ajaccio",
     away_score: "1",
+    away_scorers:[
+      {
+        name: "Mangani",
+        time: "31"
+      }
+    ],
     finished: true,
   },
   {
@@ -90,8 +106,24 @@ export const fr_day_1 = [
     time: "17:00",
     home_team: "Strasbourg",
     home_score: "1",
+    home_scorers: [
+      {
+        name: "Diallo",
+        time: "65"
+      }
+    ],
     away_team: "Monaco",
     away_score: "2",
+    away_scorers: [
+      {
+        name: "Diatta",
+        time: "43"
+      },
+      {
+        name: "Diop",
+        time: "53"
+      }
+    ],
     finished: true,
   },
   {
@@ -102,8 +134,15 @@ export const fr_day_1 = [
     time: "17:00",
     home_team: "Rennes",
     home_score: "0",
+    home_scorers:[],
     away_team: "Lorient",
     away_score: "1",
+    away_scorers: [
+      {
+        name: "Theate",
+        time: "65"
+      }
+    ],
     finished: true,
   },
   {
@@ -114,8 +153,20 @@ export const fr_day_1 = [
     time: "13:00",
     home_team: "Toulouse",
     home_score: "1",
+    home_scorers: [
+      {
+        name:"Dallinga",
+        time: "20"
+      }
+    ],
     away_team: "Nice",
     away_score: "1",
+    away_scorers: [
+      {
+        name: "Ramsey",
+        time: "78"
+      }
+    ],
     finished: true,
   },
   {
@@ -126,8 +177,32 @@ export const fr_day_1 = [
     time: "15:00",
     home_team: "Lille",
     home_score: "4",
+    home_scorers: [
+      {
+        name: "André",
+        time: "1"
+      },
+      {
+        name: "David",
+        time: "3"
+      },
+      {
+        name: "David",
+        time: "39"
+      },
+      {
+        name: "Zedadka",
+        time: "64"
+      }
+    ],
     away_team: "Auxerre",
     away_score: "1",
+    away_scorers:[
+      {
+        name: "Charbonnier",
+        time: "68"
+      },
+    ],
     finished: true,
   },
   {
@@ -138,8 +213,10 @@ export const fr_day_1 = [
     time: "15:00",
     home_team: "Angers",
     home_score: "0",
+    home_scorers: [],
     away_team: "Nantes",
     away_score: "0",
+    away_scorers:[],
     finished: true,
   },
   {
@@ -150,8 +227,32 @@ export const fr_day_1 = [
     time: "15:00",
     home_team: "Montpellier",
     home_score: "3",
+    home_scorers: [
+      {
+        name: "Sainte-Luce",
+        time: "3"
+      },
+      {
+        name: "Savanier",
+        time: "15"
+      },
+      {
+        name: "Savanier",
+        time: "81"
+      },
+    ],
     away_team: "Troyes",
     away_score: "2",
+    away_scorers: [
+      {
+        name: "Tardieu",
+        time: "2"
+      },
+      {
+        name: "Baldé",
+        time: "17"
+      },
+    ],
     finished: true,
   },
   {
@@ -162,8 +263,32 @@ export const fr_day_1 = [
     time: "15:00",
     home_team: "Lens",
     home_score: "3",
+    home_scorers: [
+      {
+        name: "Sotoca",
+        time: "27"
+      },
+      {
+        name: "Sotoca",
+        time: "62"
+      },
+      {
+        name: "Sotoca",
+        time: "65"
+      },
+    ],
     away_team: "Brest",
     away_score: "2",
+    away_scorers:[
+      {
+        name: "Belkebla",
+        time: "66"
+      },
+      {
+        name: "Del Castillo",
+        time: "82"
+      },
+    ],
     finished: true,
   },
 ]
