@@ -6,12 +6,17 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Ajaccio",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Nice",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Delort",
+        time: "65",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D07-M02",
@@ -20,12 +25,26 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Monaco",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Badiashile",
+        time: "55",
+      },
+      {
+        name: "Maripan",
+        time: "63",
+      },
+    ],
     away_team: "Lyon",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Toko-Ekambi",
+        time: "81",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D07-M03",
@@ -34,12 +53,26 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Angers",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Hunou",
+        time: "9",
+      },
+      {
+        name: "Boufal (P)",
+        time: "69",
+      },
+    ],
     away_team: "Montpellier",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Nordin",
+        time: "7",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D07-M04",
@@ -48,12 +81,34 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Lorient",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Ouattara",
+        time: "19",
+      },
+      {
+        name: "Cathline",
+        time: "60",
+      },
+      {
+        name: "Koné",
+        time: "74",
+      },
+    ],
     away_team: "Nantes",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Ganago",
+        time: "13",
+      },
+      {
+        name: "Simon",
+        time: "85",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D07-M05",
@@ -62,12 +117,26 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Marseille",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Sanchez",
+        time: "26",
+      },
+      {
+        name: "Gigot",
+        time: "61",
+      },
+    ],
     away_team: "Lille",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Dos Santos",
+        time: "12",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D07-M06",
@@ -76,12 +145,17 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "PSG",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Neymar",
+        time: "30",
+      },
+    ],
     away_team: "Brest",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "FR22/23-D07-M07",
@@ -90,12 +164,17 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Lens",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Danso",
+        time: "39",
+      },
+    ],
     away_team: "Troyes",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "FR22/23-D07-M08",
@@ -104,12 +183,12 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Strasbourg",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Clermont",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "FR22/23-D07-M09",
@@ -118,12 +197,33 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Rennes",
-    home_score: "",
-    home_scorers: [],
+    home_score: "5",
+    home_scorers: [
+      {
+        name: "Sulemana",
+        time: "3",
+      },
+      {
+        name: "Gouiri",
+        time: "60",
+      },
+      {
+        name: "Terrier",
+        time: "68",
+      },
+      {
+        name: "Tait",
+        time: "78",
+      },
+      {
+        name: "Abline",
+        time: "85",
+      },
+    ],
     away_team: "Auxerre",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "FR22/23-D07-M10",
@@ -132,11 +232,16 @@ export const fr_day_7 = [
     date: "11/09/2022",
     time: "15:00",
     home_team: "Toulouse",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Aboukhlal",
+        time: "31",
+      },
+    ],
     away_team: "Reims",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
 ];
