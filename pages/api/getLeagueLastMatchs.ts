@@ -1,11 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-import { calendar_Premier_League } from '../../data/Calendar/calendar_Premier_League';
-import { calendar_Bundesliga } from '../../data/Calendar/calendar_Bundesliga';
-import { calendar_Liga } from '../../data/Calendar/calendar_Liga';
-import { calendar_Seri_A } from '../../data/Calendar/calendar_Seri_A';
-
 import { teams_Ligue_1 } from '../../data/Teams/teams_Ligue_1';
 import { teams_Premier_League } from '../../data/Teams/teams_Premier_League';
 import { teams_Bundesliga } from '../../data/Teams/teams_Bundesliga';
@@ -16,8 +11,12 @@ import { MatchType } from '../../types/MatchType';
 import { FeededMatchType } from '../../types/FeededMatchType';
 
 import { global_FR } from '../../data/Calendar/FR/global_FR';
+import { global_UK } from '../../data/Calendar/UK/global_UK';
+import { global_IT } from '../../data/Calendar/IT/global_IT';
+import { global_ES } from '../../data/Calendar/ES/global_ES';
+import { global_DE } from '../../data/Calendar/DE/global_DE';
 
-const allMatch = [...global_FR, ...calendar_Premier_League, ...calendar_Bundesliga, ...calendar_Liga, ...calendar_Seri_A];
+const allMatch = [...global_FR, ...global_UK, ...global_IT, ...global_ES, ...global_DE];
 const allTeams = [...teams_Ligue_1, ...teams_Premier_League, ...teams_Bundesliga, ...teams_Liga, ...teams_Seri_A];
 
 type ResponseDataType = {

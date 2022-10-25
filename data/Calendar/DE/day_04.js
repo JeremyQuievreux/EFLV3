@@ -6,12 +6,22 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Bayern Munich",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Sané",
+        time: "83",
+      },
+    ],
     away_team: "Borussia M'Gladbach",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Thuram",
+        time: "43",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D04-M02",
@@ -20,12 +30,21 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "RB Leipzig",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Nkunku (P)",
+        time: "5",
+      },
+      {
+        name: "Nkunku",
+        time: "90",
+      },
+    ],
     away_team: "Wolfsbourg",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D04-M03",
@@ -34,12 +53,17 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Fribourg",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Grifo",
+        time: "48",
+      },
+    ],
     away_team: "Bochum",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D04-M04",
@@ -48,12 +72,12 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "FC Cologne",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Stuttgart",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D04-M05",
@@ -62,12 +86,25 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Mayence",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Bayern Leverkusen",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "3",
+    away_scorers: [
+      {
+        name: "Palacios",
+        time: "29",
+      },
+      {
+        name: "Frimpong",
+        time: "39",
+      },
+      {
+        name: "Frimpong",
+        time: "41",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D04-M06",
@@ -76,12 +113,17 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Hoffenheim",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Geiger",
+        time: "39",
+      },
+    ],
     away_team: "Augsbourg",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D04-M07",
@@ -90,12 +132,17 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Hertha Berlin",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Borussia Dortmund",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Modeste",
+        time: "32",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D04-M08",
@@ -104,12 +151,42 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Schalke 04",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Bütter (P)",
+        time: "31",
+      },
+    ],
     away_team: "Union Berlin",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "6",
+    away_scorers: [
+      {
+        name: "Thorsby",
+        time: "6",
+      },
+      {
+        name: "Becker",
+        time: "36",
+      },
+      {
+        name: "Heberer",
+        time: "45+3",
+      },
+      {
+        name: "Becker",
+        time: "46",
+      },
+      {
+        name: "Michel",
+        time: "87",
+      },
+      {
+        name: "Michel",
+        time: "90",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D04-M09",
@@ -118,11 +195,41 @@ export const de_day_4 = [
     date: "27/08/2022",
     time: "20:00",
     home_team: "Werder Brême",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Jung",
+        time: "14",
+      },
+      {
+        name: "Bittencourt",
+        time: "17",
+      },
+      {
+        name: "Füllkrug (P)",
+        time: "90+2",
+      },
+    ],
     away_team: "Eintracht Francfort",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "4",
+    away_scorers: [
+      {
+        name: "Götze",
+        time: "2",
+      },
+      {
+        name: "Muani",
+        time: "32",
+      },
+      {
+        name: "Lindstrom",
+        time: "39",
+      },
+      {
+        name: "Sow",
+        time: "48",
+      },
+    ],
+    finished: true,
   },
 ];

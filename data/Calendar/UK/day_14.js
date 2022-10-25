@@ -139,18 +139,4 @@ export const uk_day_14 = [
     away_scorers: [],
     finished: false,
   },
-  {
-    id: "UK22/23-D14-M10",
-    league: "Premier League",
-    info: "14° Journée",
-    date: "29/10/2022",
-    time: "",
-    home_team: "Manchester United",
-    home_score: "",
-    home_scorers: [],
-    away_team: "West Ham",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
-  },
 ];

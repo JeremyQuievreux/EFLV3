@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react'
+import React, { useEffect, useState } from 'react'
 import Head from 'next/head'
 
 import axios from 'axios'
@@ -9,40 +9,41 @@ import styles from "../../styles/pages/Calendar_pages.module.scss"
 import CalendarMatchLine from '../../comps/CalendarMatchLine'
 
 const CalendarPremierLeague = () => {
-  const [ allMatchs, setAllMatchs ] = useState<FeededMatchType[]>()
-  const [ optionsList, setOptionsList ] = useState<string[]>()
-  const [ optionSelected, setoptionSelected ] = useState<string>("")
-  const [ matchsSelect, setMatchsSelect ] = useState<FeededMatchType[]>()
+  const [allMatchs, setAllMatchs] = useState<FeededMatchType[]>()
+  const [optionsList, setOptionsList] = useState<string[]>()
+
+  const [optionSelected, setoptionSelected] = useState<string>("")
+  const [matchsSelect, setMatchsSelect] = useState<FeededMatchType[]>()
 
   useEffect(() => {
-    axios.get('/api/getLeagueNextMatchs',{
-      params:{
-        league : "Premier League",
+    axios.get('/api/getLeagueNextMatchs', {
+      params: {
+        league: "Premier League",
       }
     })
       .then(res => {
         setAllMatchs(res.data.data)
       })
-  },[])
+  }, [])
 
   useEffect(() => {
-    let days:string[] = []
+    let days: string[] = []
     allMatchs?.map((match) => {
       if (!days.includes(match.info)) {
         days = [...days, match.info]
       }
     })
     setOptionsList(days)
-  },[allMatchs])
+  }, [allMatchs])
 
   useEffect(() => {
     const test = allMatchs?.filter((match) => {
       return match.info === optionSelected
-    })    
+    })
     setMatchsSelect(test)
-  },[optionSelected])
+  }, [optionSelected])
 
-  const handleChangeOption = (e: React.ChangeEvent<HTMLSelectElement>) =>  {
+  const handleChangeOption = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setoptionSelected(e.target.value)
   }
 
@@ -62,12 +63,12 @@ const CalendarPremierLeague = () => {
       </select>
       <div className={styles.matchs_container}>
 
-      {matchsSelect && matchsSelect.map((match) => {
-        return(
-          <CalendarMatchLine match={match} key={match.id}/>
+        {matchsSelect && matchsSelect.map((match) => {
+          return (
+            <CalendarMatchLine match={match} key={match.id} />
           )
         })
-      }
+        }
       </div>
     </div>
   )
