@@ -6,12 +6,17 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Aston Villa",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Ramsey",
+        time: "41",
+      },
+    ],
     away_team: "Southampton",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "UK22/23-D08-M02",
@@ -20,12 +25,25 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Brentford",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Arsenal",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "3",
+    away_scorers: [
+      {
+        name: "Saliba",
+        time: "17",
+      },
+      {
+        name: "Jesus",
+        time: "28",
+      },
+      {
+        name: "Vieira",
+        time: "49",
+      },
+    ],
+    finished: true,
   },
   {
     id: "UK22/23-D08-M03",
@@ -62,12 +80,17 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Everton",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Maupay",
+        time: "53",
+      },
+    ],
     away_team: "West Ham",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "UK22/23-D08-M06",
@@ -90,12 +113,22 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Newcastle",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Isak (P)",
+        time: "67",
+      },
+    ],
     away_team: "Bournemouth",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Billing",
+        time: "62",
+      },
+    ],
+    finished: true,
   },
   {
     id: "UK22/23-D08-M08",
@@ -104,12 +137,34 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Nottingham",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Awoniyi",
+        time: "11",
+      },
+      {
+        name: "O'Brien",
+        time: "77",
+      },
+    ],
     away_team: "Fulham",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "3",
+    away_scorers: [
+      {
+        name: "Adarabioyo",
+        time: "54",
+      },
+      {
+        name: "Palhinha",
+        time: "57",
+      },
+      {
+        name: "Reed",
+        time: "60",
+      },
+    ],
+    finished: true,
   },
   {
     id: "UK22/23-D08-M09",
@@ -118,12 +173,46 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Tottenham",
-    home_score: "",
-    home_scorers: [],
+    home_score: "6",
+    home_scorers: [
+      {
+        name: "Kane",
+        time: "8",
+      },
+      {
+        name: "Dier",
+        time: "21",
+      },
+      {
+        name: "Bentancur",
+        time: "47",
+      },
+      {
+        name: "Heung-min",
+        time: "73",
+      },
+      {
+        name: "Heung-min",
+        time: "84",
+      },
+      {
+        name: "Heung-min",
+        time: "86",
+      },
+    ],
     away_team: "Leicester",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Tielemans (P)",
+        time: "6",
+      },
+      {
+        name: "Maddison",
+        time: "41",
+      },
+    ],
+    finished: true,
   },
   {
     id: "UK22/23-D08-M10",
@@ -132,11 +221,26 @@ export const uk_day_8 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Wolverhampton",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Manchester City",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "3",
+    away_scorers: [
+      {
+        name: "Grealish",
+        time: "1",
+      },
+
+      {
+        name: "Haaland",
+        time: "16",
+      },
+
+      {
+        name: "Foden",
+        time: "69",
+      },
+    ],
+    finished: true,
   },
 ];
