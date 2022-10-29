@@ -6,12 +6,17 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Borussia Dortmund",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Moukoko",
+        time: "78",
+      },
+    ],
     away_team: "Schalke 04",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D07-M02",
@@ -20,12 +25,22 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Bayern Leverkusen",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Demirbay",
+        time: "57",
+      },
+    ],
     away_team: "Werder Brême",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Veljkovic",
+        time: "82",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D07-M03",
@@ -34,12 +49,21 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Union Berlin",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Siebatcheu",
+        time: "54",
+      },
+      {
+        name: "Becker",
+        time: "77",
+      },
+    ],
     away_team: "Wolfsbourg",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D07-M04",
@@ -48,12 +72,22 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Mayence",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Caci",
+        time: "90+4",
+      },
+    ],
     away_team: "Hertha Berlin",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Toussart",
+        time: "30",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D07-M05",
@@ -62,12 +96,12 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Hoffenheim",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Fribourg",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D07-M06",
@@ -76,12 +110,25 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Borussia M'Gladbach",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Hofmann",
+        time: "10",
+      },
+      {
+        name: "Hofmann",
+        time: "35",
+      },
+      {
+        name: "Bensebaini",
+        time: "53",
+      },
+    ],
     away_team: "RB Leipzig",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D07-M07",
@@ -90,12 +137,22 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Bochum",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Schmitz (CSC)",
+        time: "9",
+      },
+    ],
     away_team: "FC Cologne",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Maina",
+        time: "88",
+      },
+    ],
+    finished: true,
   },
   {
     id: "DE22/23-D07-M08",
@@ -104,12 +161,17 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Augsbourg",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Berisha",
+        time: "59",
+      },
+    ],
     away_team: "Bayern Munich",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "DE22/23-D07-M09",
@@ -118,11 +180,29 @@ export const de_day_7 = [
     date: "17/09/2022",
     time: "20:00",
     home_team: "Stuttgart",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Tomas",
+        time: "79",
+      },
+    ],
     away_team: "Eintracht Francfort",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "3",
+    away_scorers: [
+      {
+        name: "Rode",
+        time: "6",
+      },
+      {
+        name: "Kamada",
+        time: "55",
+      },
+      {
+        name: "Jakic",
+        time: "88",
+      },
+    ],
+    finished: true,
   },
 ];
