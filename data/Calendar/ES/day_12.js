@@ -6,12 +6,17 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Séville",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Rayo Vallecano",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Garcia",
+        time: "61",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M02",
@@ -20,12 +25,17 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Elche",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Getafe",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Ünal",
+        time: "54",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M03",
@@ -34,12 +44,21 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Real Sociedad",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Betis Seville",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Esposito",
+        time: "86",
+      },
+      {
+        name: "Iglesias",
+        time: "90+3",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M04",
@@ -48,12 +67,22 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Real Madrid",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Vinicius",
+        time: "70",
+      },
+    ],
     away_team: "Girona",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Stuani (P)",
+        time: "80",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M05",
@@ -62,12 +91,21 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Osasuna",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Avila (P)",
+        time: "13",
+      },
+      {
+        name: "Gomez",
+        time: "19",
+      },
+    ],
     away_team: "Real Valladolid",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "ES22/23-D12-M06",
@@ -76,12 +114,17 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Valence",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Barcelone",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Lewandowski",
+        time: "90+3",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M07",
@@ -90,12 +133,30 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Almeria",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Lazaro",
+        time: "52",
+      },
+      {
+        name: "De La Hoz",
+        time: "60",
+      },
+      {
+        name: "Eguaras",
+        time: "90+6",
+      },
+    ],
     away_team: "Celta Vigo",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Novas",
+        time: "25",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M08",
@@ -104,12 +165,22 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Majorque",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Muriqi",
+        time: "48",
+      },
+    ],
     away_team: "Esp Barcelone",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Lazo",
+        time: "70",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D12-M09",
@@ -118,12 +189,17 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Ath Bilbao",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Williams",
+        time: "59",
+      },
+    ],
     away_team: "Villarreal",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "ES22/23-D12-M10",
@@ -132,11 +208,33 @@ export const es_day_12 = [
     date: "30/10/2022",
     time: "",
     home_team: "Cadix",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Bongonda",
+        time: "1",
+      },
+      {
+        name: "Fernandez",
+        time: "81",
+      },
+      {
+        name: "Sobrino",
+        time: "90+9",
+      },
+    ],
     away_team: "Atl Madrid",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Félix",
+        time: "85",
+      },
+      {
+        name: "Félix",
+        time: "89",
+      },
+    ],
+    finished: true,
   },
 ];

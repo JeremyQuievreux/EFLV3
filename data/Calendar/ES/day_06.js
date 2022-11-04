@@ -6,12 +6,34 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Ath Bilbao",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Williams",
+        time: "14",
+      },
+      {
+        name: "Sancet",
+        time: "28",
+      },
+      {
+        name: "Williams",
+        time: "33",
+      },
+    ],
     away_team: "Rayo Vallecano",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Trejo",
+        time: "5",
+      },
+      {
+        name: "Garcia",
+        time: "80",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M02",
@@ -20,12 +42,26 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Atl Madrid",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Hermos",
+        time: "83",
+      },
+    ],
     away_team: "Real Madrid",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Rogrygo",
+        time: "18",
+      },
+      {
+        name: "Valverde",
+        time: "36",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M03",
@@ -34,12 +70,26 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Betis Seville",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Iglesias (P)",
+        time: "15",
+      },
+      {
+        name: "Iglesias",
+        time: "71",
+      },
+    ],
     away_team: "Girona",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Martinez",
+        time: "7",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M04",
@@ -48,12 +98,21 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Osasuna",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Getafe",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Iglesias",
+        time: "30",
+      },
+      {
+        name: "Alvarez",
+        time: "76",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M05",
@@ -62,12 +121,25 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Barcelone",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Lewandowski",
+        time: "34",
+      },
+      {
+        name: "Depay",
+        time: "41",
+      },
+      {
+        name: "Lewandowski",
+        time: "48",
+      },
+    ],
     away_team: "Elche",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "ES22/23-D06-M06",
@@ -76,12 +148,25 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Valence",
-    home_score: "",
-    home_scorers: [],
+    home_score: "3",
+    home_scorers: [
+      {
+        name: "Castillejo",
+        time: "37",
+      },
+      {
+        name: "André",
+        time: "82",
+      },
+      {
+        name: "Almaida",
+        time: "90+3",
+      },
+    ],
     away_team: "Celta Vigo",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "ES22/23-D06-M07",
@@ -90,12 +175,22 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Villarreal",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Baena",
+        time: "51",
+      },
+    ],
     away_team: "Séville",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Torres",
+        time: "8",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M08",
@@ -104,12 +199,17 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Majorque",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Maffeo",
+        time: "25",
+      },
+    ],
     away_team: "Almeria",
-    away_score: "",
+    away_score: "0",
     away_scorers: [],
-    finished: false,
+    finished: true,
   },
   {
     id: "ES22/23-D06-M09",
@@ -118,12 +218,26 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Real Sociedad",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Sorloth",
+        time: "17",
+      },
+      {
+        name: "Mendez",
+        time: "29",
+      },
+    ],
     away_team: "Esp Barcelone",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Exposito",
+        time: "19",
+      },
+    ],
+    finished: true,
   },
   {
     id: "ES22/23-D06-M10",
@@ -132,11 +246,16 @@ export const es_day_6 = [
     date: "18/09/2022",
     time: "20:00",
     home_team: "Real Valladolid",
-    home_score: "",
+    home_score: "0",
     home_scorers: [],
     away_team: "Cadix",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Negredo",
+        time: "90+2",
+      },
+    ],
+    finished: true,
   },
 ];
