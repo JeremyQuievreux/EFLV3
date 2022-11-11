@@ -6,12 +6,22 @@ export const it_day_6 = [
     date: "11/09/2022",
     time: "20:00",
     home_team: "Atalanta Bergame",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Demiral",
+        time: "74",
+      },
+    ],
     away_team: "Cremonese",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Valeri",
+        time: "78",
+      },
+    ],
+    finished: true,
   },
   {
     id: "IT22/23-D06-M02",
@@ -20,12 +30,26 @@ export const it_day_6 = [
     date: "11/09/2022",
     time: "20:00",
     home_team: "Bologne",
-    home_score: "",
-    home_scorers: [],
+    home_score: "2",
+    home_scorers: [
+      {
+        name: "Barrow",
+        time: "59",
+      },
+      {
+        name: "Arnautovic",
+        time: "62",
+      },
+    ],
     away_team: "Fiorentina",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Quarta",
+        time: "54",
+      },
+    ],
+    finished: true,
   },
   {
     id: "IT22/23-D06-M03",
@@ -34,11 +58,25 @@ export const it_day_6 = [
     date: "11/09/2022",
     time: "20:00",
     home_team: "Empoli",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "",
+        time: "",
+      },
+    ],
     away_team: "AS Rome",
-    away_score: "",
-    away_scorers: [],
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "",
+        time: "",
+      },
+      {
+        name: "",
+        time: "",
+      },
+    ],
     finished: false,
   },
   {
