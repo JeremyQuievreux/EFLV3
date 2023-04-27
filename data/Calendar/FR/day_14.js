@@ -6,12 +6,26 @@ export const fr_day_14 = [
     date: "06/11/2022",
     time: "",
     home_team: "Lorient",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Moffi",
+        time: "53",
+      },
+    ],
     away_team: "PSG",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Neymar",
+        time: "9",
+      },
+      {
+        name: "Pereira",
+        time: "81",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D14-M02",
@@ -20,12 +34,22 @@ export const fr_day_14 = [
     date: "06/11/2022",
     time: "",
     home_team: "Clermont",
-    home_score: "",
-    home_scorers: [],
+    home_score: "1",
+    home_scorers: [
+      {
+        name: "Andric",
+        time: "62",
+      },
+    ],
     away_team: "Montpellier",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "1",
+    away_scorers: [
+      {
+        name: "Savanier (P)",
+        time: "10",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D14-M03",
@@ -34,12 +58,38 @@ export const fr_day_14 = [
     date: "06/11/2022",
     time: "",
     home_team: "Ajaccio",
-    home_score: "",
-    home_scorers: [],
+    home_score: "4",
+    home_scorers: [
+      {
+        name: "Balaïli (P)",
+        time: "33",
+      },
+      {
+        name: "Idrissy",
+        time: "34",
+      },
+      {
+        name: "Belaïli (P)",
+        time: "40",
+      },
+      {
+        name: "Nouri",
+        time: "45+3",
+      },
+    ],
     away_team: "Strasbourg",
-    away_score: "",
-    away_scorers: [],
-    finished: false,
+    away_score: "2",
+    away_scorers: [
+      {
+        name: "Bellegarde",
+        time: "6",
+      },
+      {
+        name: "Gameiro",
+        time: "17",
+      },
+    ],
+    finished: true,
   },
   {
     id: "FR22/23-D14-M04",
